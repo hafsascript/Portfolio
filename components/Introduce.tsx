@@ -43,7 +43,7 @@ const Introduce = () => {
                 words='Making Your Web Dreams Come True'/>
                 <p className='text-center
                 md:tracking-widest mt-3 mb-5 text-md md:text-lg lg:text-2xl'>
-                    Hi, I'm Hafsa ... an aspiring web developer
+                    Hi, I&apos;m Hafsa ... an aspiring web developer
                 </p>
                 <a href="#projects">
                     <ShimmerButton
