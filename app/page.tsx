@@ -1,11 +1,11 @@
 import Introduce from "@/components/Introduce";
 import {NavBar} from "@/components/ui/NavBar";
 import Projects from "@/components/Projects";
-import { navItems } from "@/data";
 import { FaHome } from "react-icons/fa";
 import { CgFileDocument } from "react-icons/cg";
 import { PiTrophyFill } from "react-icons/pi";
 import { MdPermContactCalendar } from "react-icons/md";
+import Skills from "@/components/Skills";
 
 export default function Home() {
   return (
@@ -20,9 +20,10 @@ export default function Home() {
             {name:'Skills', link:'#skills', icon:<PiTrophyFill/>},
             {name:'Contact', link:'#contact', icon:<MdPermContactCalendar/>},
           ]
-        }/>
+        } />
         <Introduce/>
         <Projects/>
+        <Skills/>
       </div>
     </main>
   );
