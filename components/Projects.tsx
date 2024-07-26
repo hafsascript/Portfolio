@@ -4,6 +4,7 @@ import { PinContainer } from './ui/3d-pin'
 import { IoMdArrowDroprightCircle } from "react-icons/io";
 
 
+
 const Projects = () => {
   return (
     <div className='py-36' id="projects">
