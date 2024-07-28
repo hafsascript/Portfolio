@@ -6,6 +6,7 @@ import { CgFileDocument } from "react-icons/cg";
 import { PiTrophyFill } from "react-icons/pi";
 import { MdPermContactCalendar } from "react-icons/md";
 import Skills from "@/components/Skills";
+import Contact from "@/components/Contact";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
         <Introduce/>
         <Projects/>
         <Skills/>
+        <Contact/>
       </div>
     </main>
   );
