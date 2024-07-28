@@ -23,12 +23,18 @@ const Contact = () => {
           console.log('SUCCESS!');
           setSuccess(true)
           form.current?.reset()
+          console.log(process.env.NEXT_PUBLIC_SERVICE_ID)
+          console.log(process.env.NEXT_PUBLIC_TEMPLATE_ID)
+          console.log(process.env.NEXT_PUBLIC_PUBLIC_KEY)
           
           
         },
         (error) => {
           console.log('FAILED...', error.text);
           setError(true)
+          console.log(process.env.NEXT_PUBLIC_SERVICE_ID)
+          console.log(process.env.NEXT_PUBLIC_TEMPLATE_ID)
+          console.log(process.env.NEXT_PUBLIC_PUBLIC_KEY)
           
         },
       );
