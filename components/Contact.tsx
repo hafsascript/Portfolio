@@ -39,10 +39,11 @@ const Contact = () => {
             <span className='text-purple'>Me</span>
         </h1>
         <form onSubmit={sendEmail} ref={form} className='h-1/2 lg:h-full lg:w-1/2 bg-violet-200  text-xl
-        flex flex-col text-black gap-8 justify-center sm:p-24 p-7 mx-auto my-12'>
+        flex flex-col border border-black text-black gap-8 justify-center sm:p-24 p-7 mx-auto my-12'>
             <span>Dear Hafsa,</span>
             <textarea rows={3} className=' bg-transparent border-b-2 border-b-black outline-none resize-none text-black font-serif '
-            name="user_message"/>
+            name="user_message"
+            />
             <span>Your Email:</span>
             <input name='user_email'
             type='text' className='bg-transparent border-b-2 border-b-black outline-none  text-black '/>
