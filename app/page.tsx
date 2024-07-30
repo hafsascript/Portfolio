@@ -7,13 +7,14 @@ import { PiTrophyFill } from "react-icons/pi";
 import { MdPermContactCalendar } from "react-icons/md";
 import Skills from "@/components/Skills";
 import Contact from "@/components/Contact";
+import FooterComp from "@/components/FooterComp";
 
 export default function Home() {
   return (
     <main className="relative bg-black-100
     flex justify-center items-center flex-col
-    overflow-hidden mx-auto sm:px-10 px-5">
-      <div className="max-w-7xl w-full">
+    overflow-hidden mx-auto ">
+      <div className="max-w-7xl w-full sm:px-10 px-5">
         <NavBar navItems={
           [
             {name:'Home', link:'/' , icon: <FaHome/>},
@@ -26,6 +27,9 @@ export default function Home() {
         <Projects/>
         <Skills/>
         <Contact/>
+      </div>
+      <div className="w-full">
+        <FooterComp/>
       </div>
     </main>
   );

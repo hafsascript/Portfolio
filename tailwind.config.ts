@@ -1,5 +1,6 @@
 import type { Config } from "tailwindcss";
 
+const flowbite = require("flowbite-react/tailwind");
 const svgToDataUri = require("mini-svg-data-uri");
 
 const colors = require("tailwindcss/colors");
@@ -10,6 +11,7 @@ const {
 const config = {
   darkMode: ["class"],
   content: [
+    flowbite.content(),
     "./pages/**/*.{ts,tsx}",
     "./components/**/*.{ts,tsx}",
     "./app/**/*.{ts,tsx}",
@@ -163,6 +165,7 @@ const config = {
     },
   },
   plugins: [
+    flowbite.plugin(),
     require("tailwindcss-animate"),
     addVariablesForColors,
     function ({ matchUtilities, theme }: any) {
